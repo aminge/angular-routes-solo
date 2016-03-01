@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Magic</title>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href="/styles/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/harryController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/stormController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/samusController.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+    <header ng-include="'/templates/header.html'"></header>
+
+    <ul class="nav">
+        <li><a href="#harry">Harry Potter</a></li>
+        <li><a href="#storm">Storm</a></li>
+        <li><a href="#samus">Samus Aran</a></li>
+    </ul>
+
+    <main ng-view></main>
+
+    <footer ng-include="'/templates/footer.html'"></footer>
+
+</body>
+</html>
